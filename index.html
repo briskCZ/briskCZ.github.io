@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<!-- Author: Marek Nesvadba -->
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="src/style.css">
+        <script src="src/views.min.js"></script> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+        <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+        <title>Marek Nesvadba</title>
+    </head>
+
+    <body>
+        <header id="home" class="row">
+            <div class="content">
+                <div class="col-wide-4 avatar_wrapper">
+                    <img src="img/avatar.jpg" class="avatar" alt="My photo">
+                </div>
+                <div class="col-wide-8 name_wrapper">
+                    <div>
+                        <p>Hello, I am</p>
+                        <h1>Marek Nesvadba</h1>
+                        <p>IT student, programmer, game developer</p>
+                    </div>
+                </div>
+            </div>
+
+        </header>
+
+        <nav id="navbar">
+            <div class="content">
+                <div class="menu-top menu-button"><a href="#home">Home</a><i onclick="toggleMenu()" class="fa fa-bars hamburger"></i></div>
+                <div id="menu_hide">
+                    <div class="menu-button"><a href="#education">Education & Experience</a></div>
+                    <div class="menu-button"><a href="#skills">Skills</a></div>
+                    <div class="menu-button"><a href="#projects">Projects</a></div>
+                    <div class="menu-button"><a href="#interests">Interests</a></div>
+                    <div class="menu-button"><a href="#contacts">Contacts</a></div>
+                </div>
+            </div> 
+        </nav>
+
+        <section id="education" class="row">
+            <div class="content">
+                <h2>Education & Experience</h2>
+                <div class="col-wide-6">
+                    <h2>Schools</h2>
+
+                    <div class="info">
+                        <h3>Elementary school Zlín-Štípa</h3>
+                        <p>2004-2012</p>
+                    </div> 
+
+                    <div class="info">
+                        <h3>Engineering High school Zlín</h3>
+                        <p>Electrical Engineering, automation</p>
+                        <p>2013-2017</p>
+                    </div>
+
+                    <div class="info">
+                        <h3>Faculty of Information Technology, Brno University of Technology</h3>
+                        <p>Bachelor's degree</p>
+                        <p>2017-2020</p>
+                    </div>
+
+                    <div class="info">
+                        <h3>Faculty of Informatics, Masaryk University</h3>
+                        <h4>Visual Informatics - Computer Games Development</h4>
+                        <p>Master's degree</p>
+                        <p>2020-2022</p>
+                    </div>
+
+
+                </div>
+                <div class="col-wide-6">
+                    <h2>Work Experience</h2>
+
+                    <div class="info">
+                        <h3>Grape</h3>
+                        <p>3 week internship thanks to the Erasmus+ programme. Mainly software testing.</p>
+                        <p>2016</p>
+                    </div>  
+
+                    <div class="info">
+                        <h3>Local Energies</h3>
+                        <p>Redrawing technical drawings in AutoCad.</p>
+                        <p>2017</p>
+                    </div>  
+
+                    <div class="info">
+                        <h3>FIT KNOT</h3>
+                        <p>Python script for information extracting from Wikipedia.</p>
+                        <p>2018</p>
+                    </div>  
+                </div>
+            </div>
+        </section> 
+
+        <section id="skills">
+            <div class="content">
+                <h2>Skills</h2>
+                <div class="col-wide-12">
+                    <!-- Icons are from https://konpa.github.io/devicon/ -->
+                    <h3>These are some of my favourite programming languages & tools:</h3>
+                    <div class="icon-wrapper">
+                        <i class="devicon-csharp-plain colored skill-icon"></i>
+                        <i class="devicon-java-plain-wordmark colored skill-icon"></i>
+                        <i class="devicon-python-plain colored skill-icon"></i>
+                        <i class="devicon-github-plain colored skill-icon"></i>
+                        <i class="devicon-android-plain colored skill-icon"></i>
+                        <i class="fab fa-unity skill-icon"></i>
+                        <i class="devicon-gimp-plain colored skill-icon"></i>
+                        <img class="skill-icon" src="img/blender_icon.png" alt="blender icon">
+                    </div>
+                    
+                    <h3>I also have some experience with these:</h3>
+                    <div class="icon-wrapper">
+                        <i class="devicon-c-plain colored skill-icon"></i>
+                        <i class="devicon-cplusplus-plain colored skill-icon"></i>
+                        <i class="devicon-css3-plain-wordmark colored skill-icon"></i>
+                        <i class="devicon-django-plain colored skill-icon"></i>
+                        <i class="devicon-html5-plain colored skill-icon"></i>
+                        <i class="devicon-inkscape-plain colored skill-icon"></i>
+                        <i class="devicon-php-plain colored skill-icon"></i>
+                        <img class="skill-icon" src="img/Matlab_Logo.png" alt="Matlab icon">
+                    </div>
+                </div>
+            </div>
+        </section> 
+
+        <section id="projects" class="row">
+            <div class="content">
+                <h2>Projects</h2>
+
+                <div id="navs_section" class="col-wide-12">
+                    <p>Here is selection of things that I am working on, or that I have worked on in the past.</p>
+
+                    <nav id="projects_nav">
+                        <div class="menu-button">Programs and Games</div>
+                        <div class="menu-button">3D graphics</div>
+                    </nav>
+
+                </div>
+
+                <div class="project sec0 col-wide-12" id="alcounter">
+                    <h3>Alcounter</h3>
+                    <p>My android app for keeping track of blood alcohol content while drinking, and not after like with other similar apps. Partly made in one school project, and then finished in my free time.
+                        Made mainly to learn app making and publishing on Google Play Store.
+                    </p>
+                    <div class="screens">
+                        <img class="col-wide-4" src="img/alcounter_screen_1_en.png" alt="Alcounter screen 1">
+                        <img class="col-wide-4" src="img/alcounter_screen_2_en.png" alt="Alcounter screen 2">
+                        <img class="col-wide-4" src="img/alcounter_screen_3_en.png" alt="Alcounter screen 3">
+                    </div>
+                    <a href='https://play.google.com/store/apps/details?id=com.brisk.alcounter&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'>
+                        <img class="play-button" alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png'/>
+                    </a>
+                </div>
+
+                <div class="project sec0 col-wide-12" id="slusovice">
+                    <h3>Slušovice map for BeamNG.drive</h3>
+                    <p>Map for the BeamNG.drive racing simulator game. I wanted to make part of horse race track, that is near where I live, and is used as rally stage few times a year. I also wanted to learn
+                        3D moddeling, texturing and using map editor. 
+                    </p>
+                    <div class="screens">
+                        <img class="col-wide-6 can-enlarge" src="img/slusovice_1.png" alt="Slušovice map screen 1">
+                        <img class="col-wide-6 can-enlarge" src="img/slusovice_2.png" alt="Slušovice map screen 2">
+                    </div>
+                    <a>Still work in progress, no download available yet.</a>
+                </div>
+
+                <div class="project sec0 col-wide-12" id="gauge">
+                    <h3>briskGaugeAC</h3>
+                    <p>My app for Assetto Corsa. Displays essential information in Škoda fabia lookalike instrument cluster. I made this because I wanted to learn how apps in Assetto Corsa are made,
+                         and I did not like any of the existing instrument cluster apps.</p>
+                    <div class="screens">
+                        <img class="col-wide-6" src="img/ac_app.png" alt="briskGauge screen 1">
+                    </div>
+                    <a class="github-button" href="https://github.com/briskCZ/briskGaugeAC"><i class="fab fa-github"></i>Check it out!</a>
+                </div>
+            
+                <div class="project sec0 col-wide-12" id="watermark">
+                    <h3>resizeAndWatermark</h3>
+                    <p>My plugin for GIMP that can add "watermark" to selected coordinates, resize the image and export it. I made it because I wanted to learn how to make plugins for GIMP. I use it when I edit photos 
+                        and want to add watermark on the same spot and resize and export multiple photos at the same time.</p>
+                    <div class="screens">
+                        <img class="col-wide-6" src="img/gimp_plugin.png" alt="resizeAndWatermark screen 1">
+                    </div>
+                    <a class="github-button" href="https://github.com/briskCZ/resizeAndWatermark"><i class="fab fa-github"></i>Check it out!</a>
+                </div>
+
+                <div class="project sec1 col-wide-12" id="robot">
+                    <h3>Robot</h3>
+                    <p>I designed and 3D modelled this robot in Blender. Design is based on Mr. Handy from Fallout series, and from cars and jet planes from the 60s. The design and model was made as an assignment for 3D character modelling on FI MU.<br />
+                    The model is rendered using blender cycles and HDRI world texture.</p>
+                    <div class="links">
+                        <a href="https://hdrihaven.com/hdri/?h=abandoned_tank_farm_03">Link to the HDRI</a>
+                    </div>
+                    <div class="screens">
+                        <img class="col-wide-4 can-enlarge" src="img/robot1.jpg" alt="Robot render 1">
+                        <img class="col-wide-4 can-enlarge" src="img/robot2.jpg" alt="Robot render 2">
+                        <img class="col-wide-4 can-enlarge" src="img/robot3.jpg" alt="Robot render 3">
+                    </div>
+                </div>
+
+                <div class="project sec1 col-wide-12" id="kart">
+                    <h3>Go Kart</h3>
+                    <p>I 3D modelled this kart in Blender. Design is based on some real life go karts. The model is stylized to the "low poly" look, but can be made more smooth by subdivision. This model will be used in a game I am working on.<br />
+                        The model is rendered using blender cycles and HDRI world texture.</p>
+                        <div class="screens">
+                            <img class="col-wide-6 can-enlarge" src="img/kart1.jpg" alt="Kart render 1">
+                            <img class="col-wide-6 can-enlarge" src="img/kart2.jpg" alt="Kart render 2">
+                        </div>
+                </div>
+
+                <div class="project sec1 col-wide-12" id="pig">
+                    <h3>Wild Boar</h3>
+                    <p>I 3D modelled this in Blender. Design is based on the stuffed animal trophies. I wanted to play around with blender fur and particles, so I chose to model a pig. The model was made as an assignment for 3D character modelling on FI MU.<br />
+                        The model is rendered using blender cycles and HDRI world texture. I played around with colored lights for the render.</p>
+                        <div class="links">
+                            <a href="https://hdrihaven.com/hdri/?h=autumn_forest_01">Link to the HDRI</a>
+                        </div>
+                        <div class="screens">
+                            <video class="col-wide-6" controls>
+                                <source src="img/pig.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                              </video> 
+                            <img class="col-wide-6 can-enlarge" src="img/pig2.png" alt="Pig render 2">
+                        </div>
+                </div>
+
+            </div>
+
+
+        </section> 
+
+        <section id="interests">
+            <div class="content">
+                <h2>Interests</h2>
+                <div class="col-wide-12">
+                    <p>Apart from programming I like computer games and watching movies. My favourite sport that I do is skiing and I also like running. I enjoy good food, cooking, listening to music and exploring interesting places. 
+                        I really like cars and car related stuff. My favourite sport to watch is Rally, and other parts of motorsport. I would like to try rallying some day. Meanwhile I try to improve my driving in rally games and simulators.
+                    <br/>
+                        I also like photography. I focus on photographing cars but I would like to try more different styles of photography. I have instagram account with few of my photos which is linked below.
+                    </p>
+
+                    <div class="screens">
+                        <img class="col-wide-3 can-enlarge" src="img/rally1.jpg" alt="Rally photo 1">
+                        <img class="col-wide-3 can-enlarge" src="img/rally2.jpg" alt="Rally photo 2">
+                        <img class="col-wide-3 can-enlarge" src="img/rally3.jpg" alt="Rally photo 3">
+                        <img class="col-wide-3 can-enlarge" src="img/rally4.jpg" alt="Rally photo 4">
+                    </div>
+                </div>
+                
+            </div>
+        </section> 
+
+        <section id="contacts">
+            <div class="content">
+                <h2>Contacts</h2>
+                <!-- Icons are from https://iconmonstr.com/ and modified by me.-->
+                <div class="icon-wrapper">
+                    <a href="https://www.instagram.com/brisk_photographer/"><img class="icon" src="img/insta_photo.png" alt="Instagram icon"></a>
+                    <a href="https://github.com/briskCZ/"><img class="icon" src="img/github.png" alt="Github icon"></a>
+                    <a href="https://www.linkedin.com/in/marek-nesvadba-21464a171/"><img class="icon" src="img/linkedin.png" alt="LinkedIn icon"></a>
+                    <a href="mailto:mar.nesvadba@gmail.com"><img class="icon" src="img/email.png" alt="Gmail icon"></a>
+                </div>
+            </div>
+        </section> 
+
+        <footer>
+            <div class="content">
+                <p>Made by: <a href="#home">Marek Nesvadba</a>, 2021.</p>
+            </div>
+        </footer>
+
+        <script>
+            // Top Navbar
+            window.onscroll = function() {menuHandler()};
+
+            var navbar = document.getElementById("navbar");
+            var navbar_offset_start = navbar.offsetTop;
+
+            // Projects navs, buttons, etc
+            var sections = [];
+            var navs_section = document.getElementById("navs_section");
+            var projects_category_buttons = document.getElementById("projects_nav").querySelectorAll("div");
+
+            for (var i = 0; i < projects_category_buttons.length; i++){
+                (function(i){
+                    projects_category_buttons[i].addEventListener("click", function() {switchSelectedNav(i);});
+                })(i);
+            }
+
+            generateProjectNavs();
+            selectFirstProject();
+
+            addOnclickToImages();
+
+            function selectFirstProject(){
+                projects_category_buttons[0].click();
+                var firstProject = document.getElementsByClassName("sec0")[0];
+                var firstProjectButton = document.querySelector("#project-nav .menu-button")
+                switchProject(firstProject,firstProjectButton);
+            }
+
+            // Generates menu and buttons for all projects in this file
+            function generateProjectNavs(){
+                // Generate navs that will hold buttons
+                for(var i = 0; i < projects_category_buttons.length; i++){
+                    var new_nav = document.createElement("nav");
+                    
+                    new_nav.style.display = "none";
+                    new_nav.id = "project-nav";
+
+                    sections.push(new_nav);
+                    navs_section.appendChild(new_nav);
+                }
+
+                // Generate individual buttons for navs
+                for (var i = 0; i < sections.length; i++){
+                    var sec = document.getElementsByClassName("sec" + i);
+                    
+                    for (var j = 0; j < sec.length; j++){
+                        (function(j, sec){
+                            var new_div = document.createElement("div");
+                            var new_node = document.createTextNode(sec[j].querySelector("h3").textContent);
+
+                            new_div.appendChild(new_node);
+                            new_div.classList.add("menu-button");
+                            new_div.addEventListener("click", function(){switchProject(sec[j], new_div)});
+
+                            sections[i].appendChild(new_div);
+                        })(j, sec);
+                    }
+                }
+            }
+
+            // Displays selected menu with buttons for the right category of projects
+            function switchSelectedNav(number){
+                for(var i = 0; i< projects_category_buttons.length; i++){
+                    sections[i].style.display = "none";
+                    projects_category_buttons[i].classList.remove("selected");
+                }
+
+                projects_category_buttons[number].classList.add("selected");
+
+                var x = window.matchMedia("(min-width: 650px)")
+
+                if(x.matches){
+                    sections[number].style.display = "flex";
+                }else{
+                    sections[number].style.display = "block";
+                }
+            }
+
+            // Displays selected project
+            function switchProject(project, button){
+                closeAllProjects();
+                project.style.display = "initial";
+                button.classList.add("selected");
+            }
+
+            function closeAllProjects() {
+                var projects = document.querySelectorAll(".project");
+                var buttons = document.querySelectorAll("#project-nav .menu-button");
+
+                for(var i = 0; i < projects.length; i++){
+                    projects[i].style.display = "none";
+                }
+
+                for(var i = 0; i < buttons.length; i++){
+                    buttons[i].classList.remove("selected");
+                }
+
+            }
+
+            function menuHandler() {
+                if (window.pageYOffset >= navbar_offset_start) {
+                    navbar.classList.add("sticky");
+                } else {
+                    navbar.classList.remove("sticky");
+                }
+
+            }
+            
+            function addOnclickToImages(){
+                var images = document.querySelectorAll(".can-enlarge")
+
+                for (var i = 0; i < images.length; i++){
+                    images[i].addEventListener("click", function(){showLarge(this.src)});
+                }
+            }
+
+            function showLarge(src){
+                var a = document.createElement("a");
+                a.href = src;
+                var viewer = new Views(a);
+                viewer.open();
+            }
+
+            function toggleMenu() {
+                var menu_hide = document.getElementById("menu_hide");
+                if (menu_hide.style.display === "block") {
+                    menu_hide.style.display = "none";
+                } else {
+                    menu_hide.style.display = "block";
+                }
+            }            
+        </script>
+
+    </body>
+</html> 

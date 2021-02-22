@@ -1,0 +1,294 @@
+/* Author: Marek Nesvadba, xnesva06 FIT VUT 2020 */
+
+:root {
+    --primary-color: #ff8b00;
+    --primary-light-color: #ffa130;
+    --background-color: #faeee1;
+
+    --text-light-color: white;
+    --text-dark-color: #888888;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    color: var(--text-dark-color);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.content{
+    height: 100%;
+    width: 100%;
+    max-width: 1000px;
+    min-width: 300px;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    background-color: var(--background-color);
+}
+
+h1 {
+    font-size: 42px;
+    font-weight: lighter;
+    color: var(--primary-color);
+}
+
+h2{
+    margin-top: 60px;
+    color: var(--primary-color);
+    border-bottom-style: solid;
+    
+}
+
+h3{
+
+    color: var(--primary-color);
+}
+
+.content > h2:first-child {
+    margin-left: 15px;
+}
+
+/* Header */
+header{
+    background-color: var(--background-color);
+    height: calc(100vh - 51px); /* 51px is height of navbar */
+    display: flex;
+    justify-content: center;
+}
+
+.avatar{
+    border-radius: 50%;
+    width: 50%;
+    height: auto;
+}
+
+.avatar_wrapper{
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+}
+
+.name_wrapper{
+    display: flex;
+    justify-content: center;
+}
+
+/* Navigation */
+nav{
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.menu-button{
+    padding: 16px;
+}
+
+.selected, .menu-button:hover {
+    background-color: var(--primary-light-color);
+}
+
+nav a, i{
+    color: var(--text-light-color);
+}
+
+.menu-top{
+    display: flex;
+    justify-content: space-between;
+}
+
+#menu_hide{
+    display: none;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+/* Education & Experience */
+.info{
+    margin-top: 15px;
+}
+
+/* Skills */
+.skill-icon{
+    font-size: 50px;
+    margin: 10px;
+    height: 50px;
+}
+
+/* Projects */
+.projects-nav{
+    background-color: var(--primary-light-color);
+    display: block;
+}
+
+.menu-button{
+    color: var(--text-light-color);
+}
+
+.project{
+    display: none;
+}
+
+.hide{
+    display: none;
+}
+
+.play-button{
+    width: 200px;
+}
+
+.github-button{
+    border-radius: 3px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: var(--text-dark-color);
+    background-color: white;
+    color: black;
+    padding: 5px;
+}
+
+.github-button:hover{
+    border-color: black;
+}
+
+.fa-github{
+    color: black;
+    margin-right: 5px;
+}
+
+.fa-unity{
+    color: black;
+}
+
+#projects p {
+    padding-bottom: 10px;
+}
+
+.links a{
+    color: var(--primary-light-color);
+}
+
+.links a:hover{
+    color:var(--primary-color);
+}
+
+/* Contact */
+.icon-wrapper{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    min-height: 88px;
+}
+
+.icon{
+    width: calc(100vw/10);
+    max-width: 50px;
+    margin: 10px;
+}
+
+.icon:hover{
+    max-width: 60px;
+    width: 60px;
+}
+
+/* Footer */
+footer{
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+}
+
+footer p,a{
+    color: var(--text-light-color);
+    
+}
+
+footer p{
+    padding: 15px;
+}
+
+/* Responsive */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+  
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+
+/* For mobile phones */
+[class*="col-"] {
+    width: 100%;
+}
+
+/* For desktop */
+@media only screen and (min-width: 650px) {
+    .col-wide-1 {width: 8.33%;}
+    .col-wide-2 {width: 16.66%;}
+    .col-wide-3 {width: 25%;}
+    .col-wide-4 {width: 33.33%;}
+    .col-wide-5 {width: 41.66%;}
+    .col-wide-6 {width: 50%;}
+    .col-wide-7 {width: 58.33%;}
+    .col-wide-8 {width: 66.66%;}
+    .col-wide-9 {width: 75%;}
+    .col-wide-10 {width: 83.33%;}
+    .col-wide-11 {width: 91.66%;}
+    .col-wide-12 {width: 100%;}
+
+    #navbar .content{
+        display: flex;
+    }
+
+    .avatar{
+        width: 100%;
+    }
+
+    .avatar_wrapper{
+        margin: 0;
+        display: flex;
+        align-items: center;
+        height: 100%;
+    }
+
+    .name_wrapper{
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: left;
+    }
+
+    .hamburger{
+        display: none !important;
+    }
+
+    #menu_hide{
+        display: flex !important;
+    }
+
+    #projects-nav{
+        display: flex;
+    }
+
+    .screens{
+        display: flex;
+        justify-content: center;
+    }
+}
