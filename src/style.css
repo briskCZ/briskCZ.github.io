@@ -178,6 +178,10 @@ nav a, i{
     padding-bottom: 10px;
 }
 
+.links {
+    display: grid;
+}
+
 .links a{
     color: var(--primary-light-color);
 }
@@ -290,5 +294,6 @@ footer p{
     .screens{
         display: flex;
         justify-content: center;
+        flex-wrap: wrap;
     }
 }
