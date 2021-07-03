@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<!-- Author: Marek Nesvadba -->
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+        <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+        <title>Marek Nesvadba</title>
+
+        <link rel="stylesheet" href="skiresort/TemplateData/style.css">
+        <script src="skiresort/TemplateData/UnityProgress.js"></script>
+        <script src="skiresort/Build/UnityLoader.js"></script>
+        <script>
+            var unityInstance = UnityLoader.instantiate("unityContainer", "skiresort/Build/buidl.json", {onProgress: UnityProgress});
+        </script>
+    </head>
+    <body>
+        <div class="webgl-content">
+            <div id="unityContainer" style="width: 960px; height: 600px"></div>
+            <div class="footer">
+                <div class="webgl-logo"></div>
+                <div class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></div>
+                <div class="title">SkiResortTycoon</div>
+            </div>
+        </div>
+        <a href="index.html">Back to the main site!</a>
+        <p>This page is still work in progress!</p>
+    </body>
+</html> 
+                    
