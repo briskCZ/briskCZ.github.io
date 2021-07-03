@@ -242,6 +242,11 @@ footer p{
     width: 100%;
 }
 
+/* TODO: do this in some better way */
+.video{
+    width: 100%;
+}
+
 /* For desktop */
 @media only screen and (min-width: 650px) {
     .col-wide-1 {width: 8.33%;}
@@ -291,9 +296,24 @@ footer p{
         display: flex;
     }
 
+    #project-nav{
+        flex-wrap: wrap;
+    }
+
     .screens{
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
+    }
+
+    .videos{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .video{
+        width: 720px;
+        height: 405px;
     }
 }
