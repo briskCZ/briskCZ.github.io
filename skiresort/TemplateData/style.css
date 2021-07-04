@@ -15,6 +15,7 @@ body {   background-color: var(--background-color);}
 
 .links a{
     color: var(--primary-light-color);
+    font-family: 'Roboto', sans-serif;
     font-size: 30px;
 }
 

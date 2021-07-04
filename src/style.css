@@ -1,4 +1,4 @@
-/* Author: Marek Nesvadba, xnesva06 FIT VUT 2020 */
+/* Author: Marek Nesvadba */
 
 :root {
     --primary-color: #ff8b00;
@@ -45,7 +45,6 @@ h2{
     margin-top: 60px;
     color: var(--primary-color);
     border-bottom-style: solid;
-    
 }
 
 h3{
@@ -225,6 +224,10 @@ footer p{
     padding: 15px;
 }
 
+.can-enlarge{
+    cursor:zoom-in;
+}
+
 /* Responsive */
 .row::after {
     content: "";
@@ -286,6 +289,7 @@ footer p{
 
     .hamburger{
         display: none !important;
+        padding: 16px;
     }
 
     #menu_hide{
