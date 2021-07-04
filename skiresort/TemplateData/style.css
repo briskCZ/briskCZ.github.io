@@ -1,3 +1,27 @@
+:root {
+    --primary-color: #ff8b00;
+    --primary-light-color: #ffa130;
+    --background-color: #faeee1;
+
+    --text-light-color: white;
+    --text-dark-color: #888888;
+}
+body {   background-color: var(--background-color);}
+
+.links {
+    display: grid;
+    justify-content: center;
+}
+
+.links a{
+    color: var(--primary-light-color);
+    font-size: 30px;
+}
+
+.links a:hover{
+    color:var(--primary-color);
+}
+
 .webgl-content * {border: 0; margin: 0; padding: 0}
 .webgl-content {position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%);}
 
