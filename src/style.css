@@ -189,6 +189,10 @@ nav a, i{
     color:var(--primary-color);
 }
 
+.sub-project{
+    margin-top: 16px;
+}
+
 /* Contact */
 .icon-wrapper{
     display: flex;
