@@ -81,6 +81,11 @@ h3{
     color: var(--primary-color);
 }
 
+.highlight{
+    font-weight: 690;
+    color: var(--text-highlight-color);
+}
+
 /* Header */
 header{
     height: calc(100vh);
@@ -88,9 +93,9 @@ header{
     justify-content: center;
 }
 
-.highlight{
-    font-weight: 690;
-    color: var(--text-highlight-color);
+header .content{
+    display: grid;
+    align-content: center;
 }
 
 .avatar{
@@ -102,7 +107,6 @@ header{
 .avatar_wrapper{
     display: flex;
     justify-content: center;
-    margin-top: 60px;
 }
 
 .name_wrapper{
@@ -117,7 +121,6 @@ header{
 }
 .header-arrow{
     font-size: 32px;
-    color: var(--text-light-color);
 }
 
 .header-arrow:hover {
@@ -127,7 +130,6 @@ header{
 /* Navigation */
 nav{
     background-color: var(--background-dark-color);
-    display: flex;
     width: 100%;
     position: fixed;
 }
@@ -139,7 +141,6 @@ nav{
 .menu-button{
     font-size: 20px;
     padding: 16px;
-    color: var(--text-light-color);
 }
 
 .menu-button a:hover {
@@ -152,8 +153,6 @@ nav a,nav i{
 }
 
 .menu-top{
-    display: flex;
-    justify-content: space-between;
     font-weight: 690;
 }
 
@@ -167,8 +166,10 @@ nav a,nav i{
 
 /* Projects */
 .project{
-    margin-top: 32px;
+    margin-top: 48px;
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .project-info{
@@ -176,8 +177,9 @@ nav a,nav i{
     color: var(--text-dark-color);
 }
 .project-image{
+    padding: 0 !important;
+    width: 90% !important;
     border-radius: 15px;
-    width: 500px;
 }
 
 .project-title{
@@ -312,10 +314,13 @@ footer p{
     .col-wide-11 {width: 91.66%;}
     .col-wide-12 {width: 100%;}
 
-    #navbar .content{
+    #navbar{
         display: flex;
     }
 
+    header .content{
+        display: block;
+    }
     .avatar{
         width: 100%;
     }
@@ -340,6 +345,11 @@ footer p{
 
     #menu-hide{
         display: flex !important;
+    }
+
+    .project{
+        display: flex;
+        flex-wrap: nowrap;
     }
 
     .screens{
