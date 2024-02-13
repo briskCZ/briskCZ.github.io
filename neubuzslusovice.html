@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<!-- Author: Marek Nesvadba -->
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="src/style.css">
+        <script src="src/views.min.js"></script> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+        <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+
+        <title>Marek Nesvadba - Neubuz Slušovice</title>
+
+    </head>
+
+    <body>
+        <nav id="navbar">
+            <div class="menu-top menu-button"><i onclick="toggleMenu()" class="fa fa-bars hamburger"></i><a href="index.html#home">Marek Nesvadba</a></div>
+            <div id="menu-hide" class="menu-right-buttons">
+                <div class="menu-top menu-button"><a href="index.html#projects">Portfolio</a></div>
+                <div class="menu-top menu-button"><a href="https://drive.google.com/file/d/1fN3_JRWeU_E2YCWObYHlHIpaWnl_DOfu/view?usp=sharing" target="_blank">Resumé</a></div>
+            </div>
+        </nav>
+
+        <header id="home" class="dark-bg row">
+            <div class="content">
+
+                <div class="project header_content_wrapper">
+                    <a class="col-wide-12"><img class="project-image" src="img/neubuz-slusovice1.png" alt="Project Image"></a>
+                    <div class="col-wide-10 project-info">
+                        <p class="project-misc-text">Blender</p>
+                        <p class="project-title">Neubuz - Slušovice Rally Stage for Assetto Corsa</p>
+                        <p class="project-desc-short">Rally stage based on a real-life road between Czech towns Neubuz and Slušovice which was used as a part of a local rally competition. The stage was created as part of my Master's thesis.</p>
+                    </div>
+                </div>
+
+                <div class="header-arrow-wrapper">
+                    <a href="#project-info"><i class="fas fa-chevron-down header-arrow"></i></a>
+                </div>
+
+            </div>
+        </header>
+
+        <section id="project-info" class="dark-bg">
+        <div class="content">
+            <div class="col-wide-12">
+                <h2>Neubuz - Slušovice Rally Stage</h2>
+                <p class="project-misc-text"><span class="highlight-weight">Used Technologies: </span>Blender, Assetto Corsa Tools, CloudCompare, Gimp</p>
+                <p class="project-misc-text"><span class="highlight-weight">My responsibilites: </span>Everything</p>
+            </div>
+        </div>
+        </section>
+
+        <section id="about-project" class="light-bg">
+            <div class="content">
+                <h2>The task</h2>
+                <div class="col-wide-6">
+                    <h3>Context</h3>
+                    <p>When i was deciding about topic for my master's thesis I wanted to work on something I would enjoy and the best case would be if the topic would involve at least some of my hobbies. 
+                        When I learned about a possibility of creating a track for racing simulator, I knew that it was the right topic for me. In the end it involved multiple of my hobbies and I couldn't chose a better topic.</p>
+                </div>
+                <div class="col-wide-6">
+                    <h3>The thesis</h3>
+                    <p>The thesis itself consited of two main parts, the thesis text and the track. The text described the theoretical background of the topic and the entire process of track creation, from the initial research to the final comparison of the resulting digital map and it's real-world counterpart.</p>
+                </div>
+                <div class="col-wide-12">
+                    <h3>The goal</h3>
+                    <p>
+                        The goal of the thesis was to research existing approaches, workflows, and technologies used for the digital capturing of real-world topographic data, especially focusing on the creation of real-world-based maps for racing video games and their specifics.
+                        Describe the main pipeline, approaches, and devices used to develop maps for currently existing racing simulators, and discuss their pros and cons. Afterward, select a suitable racing simulator and implement a new map based on desired existing real-world location.
+                        Finally, compare the resulting virtual race course with the real-world location using photos and videos and discuss the outcomes and observations.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="about-project" class="light-bg">
+            <div class="content">
+                <h2>Map creation</h2>
+                <div class="col-wide-12">
+                    <h3>The process</h3>
+                    <p>
+                        The first part of the process was the so-called pre-production. A suitable real-world location and a racing game/simulator had to be selected. 
+                        The next part of the process was on location research consisting of taking lots of photos and videos of the selected location, mainly the road, its surroundings, buildings, etc. 
+                        A digital terrain model of the location was purchased and later used as a base for the terrain in the map. 
+                        <br><br>
+                        The creation of the track involved a lot of 3D modelling in Blender. 
+                        The terrain was created with the help of the digital terrain model. 
+                        The road and all of the buildings and miscellaneous items in the village and around the road were modelled and placed in the map using photos and videos as references. 
+                        Trees, grass and other nature assets were placed in the correct locations for the map to be as realistic as possible. 
+                        All of the models in Blender had to be named according to Assetto Corsa's naming convention so the tool used for converting .fbx files to Assetto Corsa's proprietary format could work correctly. 
+                        <br><br>
+                        A lot of exporting and testing of the map in the game was happening throughout the development process to ensure that everything looked correct and there were no issues with the map. 
+                        <br><br>
+                        More details are available in the thesis, reachable through the link at the end of this page. 
+                    </p>
+                </div>
+            </div>
+        </section> 
+
+        <section id="about-project" class="light-bg">
+            <div class="content">
+                <h2>The Result</h2>
+                <div class="col-wide-12">
+                    <h3>Media</h3>
+
+                    <div class="screens">
+                        <img class="col-wide-4 can-enlarge" src="img/comparison1.jpg" alt="Neubuz Slušovice screen 1">
+                        <img class="col-wide-4 can-enlarge" src="img/comparison2.jpg" alt="Neubuz Slušovice screen 2">
+                        <img class="col-wide-4 can-enlarge" src="img/comparison3.jpg" alt="Neubuz Slušovice screen 3">
+                    </div>
+                    <div class="videos">
+                        <iframe class="video" src="https://www.youtube.com/embed/A2OptXpKIak?si=tBkBBe44Ja-fUKHC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <iframe class="video" src="https://www.youtube.com/embed/oPPGB6EAuI0?si=ggQt9aww_Bp0V9fR&amp;start=2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                <div class="col-wide-12 links">
+                    <h3>Links</h3>
+                    <a href="https://is.muni.cz/th/y7kue/">The thesis text and attachments</a>
+                    <a href="https://www.racedepartment.com/downloads/neubuz-slu%C5%A1ovice-czech-rally-stage.62603/">RaceDepartment page of the track for Assetto Corsa</a>
+                </div>
+            </div>
+        </section> 
+
+        <footer>
+            <p>© Marek Nesvadba 2024</p>
+        </footer>
+
+        <script>
+            addOnclickToImages();
+
+            function addOnclickToImages(){
+                var images = document.querySelectorAll(".can-enlarge")
+
+                for (var i = 0; i < images.length; i++){
+                    images[i].addEventListener("click", function(){showLarge(this.src)});
+                }
+            }
+
+            function showLarge(src){
+                var a = document.createElement("a");
+                a.href = src;
+                var viewer = new Views(a);
+                viewer.open();
+            }
+
+            function toggleMenu() {
+                var menu_hide = document.getElementById("menu-hide");
+                if (menu_hide.style.display === "block") {
+                    menu_hide.style.display = "none";
+                } else {
+                    menu_hide.style.display = "block";
+                }
+            }
+        </script>
+    </body>
+</html> 

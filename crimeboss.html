@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<!-- Author: Marek Nesvadba -->
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="src/style.css">
+        <script src="src/views.min.js"></script> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+        <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+
+        <title>Marek Nesvadba - Crime Boss UI</title>
+
+    </head>
+
+    <body>
+        <nav id="navbar">
+            <div class="menu-top menu-button"><i onclick="toggleMenu()" class="fa fa-bars hamburger"></i><a href="index.html#home">Marek Nesvadba</a></div>
+            <div id="menu-hide" class="menu-right-buttons">
+                <div class="menu-top menu-button"><a href="index.html#projects">Portfolio</a></div>
+                <div class="menu-top menu-button"><a href="https://drive.google.com/file/d/1fN3_JRWeU_E2YCWObYHlHIpaWnl_DOfu/view?usp=sharing" target="_blank">Resumé</a></div>
+            </div>
+        </nav>
+
+        <header id="home" class="dark-bg row">
+            <div class="content">
+
+                <div class="project header_content_wrapper">
+                    <a class="col-wide-12"><img class="project-image" src="img/crime_boss.jpg" alt="Project Image"></a>
+                    <div class="col-wide-10 project-info">
+                        <p class="project-misc-text">Unreal Engine 4</p>
+                        <p class="project-title">Crime Boss: Rockay City</p>
+                        <p class="project-desc-short">Game from Ingame Studios, released by 505 Games. I am currently working on this project as UI Programmer.</p>
+                    </div>
+                </div>
+
+                <div class="header-arrow-wrapper">
+                    <a href="#project-info"><i class="fas fa-chevron-down header-arrow"></i></a>
+                </div>
+
+            </div>
+        </header>
+
+        <section id="project-info" class="dark-bg">
+        <div class="content">
+            <div class="col-wide-12">
+                <h2>Crime Boss: Rockay City UI</h2>
+                <p class="project-misc-text"><span class="highlight-weight">Used Technologies: </span>Unreal Engine 4, C++, Bluperints</p>
+                <p class="project-misc-text"><span class="highlight-weight">My responsibilites: </span>UI programming</p>
+            </div>
+        </div>
+        </section>
+
+        <section id="about-project" class="light-bg">
+            <div class="content">
+                <h2>My Journey</h2>
+                <div class="col-wide-6">
+                    <h3>The Begining</h3>
+                    <p>
+                        I began my journey at Ingame Studios as an intern, which was a requirement for my university program. Right from the start, I had my sights set on working as a UI programmer or in a similar role.
+                        Although I first worked as a technical QA, after a few months, I received more responsibilities as a UI Programmer.
+                    </p>
+                </div>
+                <div class="col-wide-6">
+                    <h3>The experience</h3>
+                    <p>
+                        I have spent almost two and a half years working on the UI of Crime Boss: Rockay City, in collaboration with a team of other programmers and UI/UX designers. 
+                        During this period, I have worked on almost all parts of the game's UI. I found the most enjoyable features to be the ones that allowed me to solve problems with my own ideas, rather than having to strictly follow prepared designs or mockups.
+                    </p>
+                </div>
+
+                <div class="col-wide-12">
+                    <p>
+                        As mentioned earlier, UI/UX designers provide the mockups for widgets and screens. However, sometimes a problem arises that requires a simple and efficient solution. One problem of this kind and the solution I came up with is described in more detail in the following text. 
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="about-project" class="light-bg">
+            <div class="content">
+                <h2>The virtual cursor</h2>
+                <div class="col-wide-12">                    
+                    <div class="col-wide-12">
+                        <h3>The problem</h3>
+                        <p>
+                            One of the major UI/UX flaws in the console release of the game was the mission selection process on the city map. Players who solely relied on game controllers had only one confusing way to navigate through the mission icons on the map and choose them.
+                            <br><br> 
+                            The navigation involved scrolling through icons sequentially with no option to skip or know the fastest route to the desired icon.
+                        </p>
+                    </div>
+
+                    <div class="col-wide-12">
+                        <h3>Problem solving</h3>
+                        <p>
+                            Several different approaches were carefully tested and refined through trial and error, with feedback from colleagues helping to guide the process.
+                            <br><br> 
+                            The most promising one was a custom virtual cursor that would snap to the closest mission icon and soft-select it. It was essential to fine-tune the snapping behavior since an incorrectly functioning cursor could do more harm than good.
+                            Some of the key settings that had the most impact were the sizes of the icon colliders and the proximity around the cursor that is used to collect nearby icons. 
+                            In addition, factors such as the speeds and timing of different stages of the snapping process, as well as the conditions under which snapping can occur, were important.
+                        </p>
+                    </div>
+
+                    <div class="col-wide-12">
+                        <h3>The solution</h3>
+                        <p>
+                            The final solution to the problem that made it into the game in one of the updates is the virtual cursor. The cursor is controlled by the left stick and has finely tuned speed, size, collider and other settings to provide the best possible experience to the players. 
+                            Alternatively, players can use a directional icon selection controlled by the d-pad which provides less accurate but faster way of navigating the missions.
+                        </p>
+                    </div>
+
+                    <div class="col-wide-12 screens">
+                        <img class="col-wide-8" src="img/cb_cursor.gif" alt="CrimeBoss virtual cursor gif">
+                    </div>
+
+                </div>
+            </div>
+        </section> 
+
+        <footer>
+            <p>© Marek Nesvadba 2024</p>
+        </footer>
+
+        <script>
+            addOnclickToImages();
+
+            function addOnclickToImages(){
+                var images = document.querySelectorAll(".can-enlarge")
+
+                for (var i = 0; i < images.length; i++){
+                    images[i].addEventListener("click", function(){showLarge(this.src)});
+                }
+            }
+
+            function showLarge(src){
+                var a = document.createElement("a");
+                a.href = src;
+                var viewer = new Views(a);
+                viewer.open();
+            }
+
+            function toggleMenu() {
+                var menu_hide = document.getElementById("menu-hide");
+                if (menu_hide.style.display === "block") {
+                    menu_hide.style.display = "none";
+                } else {
+                    menu_hide.style.display = "block";
+                }
+            }
+        </script>
+    </body>
+</html> 

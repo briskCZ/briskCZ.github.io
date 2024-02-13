@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<!-- Author: Marek Nesvadba -->
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="src/style.css">
+        <script src="src/views.min.js"></script> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+        <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+
+        <title>Marek Nesvadba - VagonApp</title>
+    </head>
+
+    <body>
+        <nav id="navbar">
+            <div class="menu-top menu-button"><i onclick="toggleMenu()" class="fa fa-bars hamburger"></i><a href="index.html#home">Marek Nesvadba</a></div>
+            <div id="menu-hide" class="menu-right-buttons">
+                <div class="menu-top menu-button"><a href="index.html#projects">Portfolio</a></div>
+                <div class="menu-top menu-button"><a href="https://drive.google.com/file/d/1fN3_JRWeU_E2YCWObYHlHIpaWnl_DOfu/view?usp=sharing" target="_blank">Resumé</a></div>
+            </div>
+        </nav>
+
+        <header id="home" class="dark-bg row">
+            <div class="content">
+
+                <div class="project header_content_wrapper">
+                    <a class="col-wide-12"><img class="project-image" src="img/vagonapp_frontpage.png" alt="Project Image"></a>
+                    <div class="col-wide-10 project-info">
+                        <p class="project-misc-text">Android Studio</p>
+                        <p class="project-title">VagonApp</p>
+                        <p class="project-desc-short">Android app for recognizing info about railway wagons from their numerical code.</p>
+                    </div>
+                </div>
+
+                <div class="header-arrow-wrapper">
+                    <a href="#project-info"><i class="fas fa-chevron-down header-arrow"></i></a>
+                </div>
+
+            </div>
+        </header>
+
+        <section id="project-info" class="dark-bg">
+        <div class="content">
+            <div class="col-wide-12">
+                <h2>VagonApp - vagon recognition app</h2>
+                <p class="project-misc-text"><span class="highlight-weight">Used Technologies: </span>Android Studio, Kotlin</p>
+                <p class="project-misc-text"><span class="highlight-weight">My responsibilites: </span>Work with photos and ML kit, UI</p>
+            </div>
+        </div>
+        </section>
+
+        <section id="about-project" class="light-bg">
+            <div class="content">
+                <h2>About</h2>
+                <div class="col-wide-6">
+                    <h3>Context</h3>
+                    <p>VagonApp is an app that was made as a university assignment by me and Petr Šopf, which was all about trying new technologies. It is written in Kotlin and it uses third-party libraries and tools like ML kit for text recognition in photographs.
+                    </p>
+                </div>
+                <div class="col-wide-6">
+                    <h3>The Idea</h3>
+                    <p>
+                        I came up with the idea to use the ML kit library and text recognition in images of trains when thinking about some interesting and novel use of all the technologies that were required by the assignment.
+                        The app is not very useful for the general public and anyone outside central Europe, but working on it was a great experience and gave me a lot.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="about-project" class="light-bg">
+            <div class="content">
+                <h2>The Result</h2>
+                <div class="col-wide-12">
+                    <h3>Media</h3>
+
+                    <div class="screens">
+                        <img class="col-wide-3" src="img/vagonapp_screen1.png" alt="Alcounter screen 1">
+                        <img class="col-wide-3" src="img/vagonapp_screen2.png" alt="Alcounter screen 2">
+                        <img class="col-wide-3" src="img/vagonapp_screen3.png" alt="Alcounter screen 3">
+                        <img class="col-wide-3" src="img/vagonapp_screen4.png" alt="Alcounter screen 3">
+                    </div>
+                </div>
+                <div class="col-wide-12 links">
+                    <h3>Links</h3>
+                    <a href='https://play.google.com/store/apps/details?id=com.brisk.vagonapp' target="_blank">
+                        <img class="play-button" alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png'/>
+                    </a>
+                </div>
+            </div>
+        </section> 
+
+        <footer>
+            <p>© Marek Nesvadba 2024</p>
+        </footer>
+
+        <script>
+            addOnclickToImages();
+
+            function addOnclickToImages(){
+                var images = document.querySelectorAll(".can-enlarge")
+
+                for (var i = 0; i < images.length; i++){
+                    images[i].addEventListener("click", function(){showLarge(this.src)});
+                }
+            }
+
+            function showLarge(src){
+                var a = document.createElement("a");
+                a.href = src;
+                var viewer = new Views(a);
+                viewer.open();
+            }
+
+            function toggleMenu() {
+                var menu_hide = document.getElementById("menu-hide");
+                if (menu_hide.style.display === "block") {
+                    menu_hide.style.display = "none";
+                } else {
+                    menu_hide.style.display = "block";
+                }
+            }
+        </script>
+    </body>
+</html> 

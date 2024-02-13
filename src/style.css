@@ -1,14 +1,12 @@
 /* Author: Marek Nesvadba */
 
 :root{
-    --primary-color: #ff8b00;
-    
-    --background-dark-color: #383E42;
+    --background-dark-color: #1f1f1f;
     --background-light-color: #F5F5F5;
     
-    --text-highlight-color: #ff8b00;
+    --text-highlight-color: #c37d4c;
     --text-light-color: #F5F5F5;
-    --text-dark-color: #383E42;
+    --text-dark-color: #181818;
 }
 
 *{
@@ -50,11 +48,11 @@ section{
     background-color: var(--background-dark-color);
 }
 
-.light-bg p,.light-bg h2{
+.light-bg p,.light-bg h2, .light-bg span{
     color: var(--text-dark-color);
 }
 
-.dark-bg p,.dark-bg h2{
+.dark-bg p,.dark-bg h2, .dark-bg span{
     color: var(--text-light-color);
 }
 
@@ -73,17 +71,27 @@ h2{
     text-transform: uppercase;
 }
 
+h3{ 
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--text-dark-color);
+}
+
 #interests h2{
     margin-bottom: 32px;
 }
 
-h3{
-    color: var(--primary-color);
+#project-info h2{
+    display: block;
 }
 
-.highlight{
+.highlight-color{
     font-weight: 690;
     color: var(--text-highlight-color);
+}
+
+.highlight-weight{
+    font-weight: 690;
 }
 
 /* Header */
@@ -99,7 +107,7 @@ header .content{
 }
 
 .avatar{
-    border-radius: 5%;
+    border-radius: 10px;
     width: 70%;
     height: auto;
 }
@@ -109,10 +117,11 @@ header .content{
     justify-content: center;
 }
 
-.name_wrapper{
+.header_content_wrapper{
     display: flex;
     justify-content: center;
 }
+
 .header-arrow-wrapper{
     position: absolute;
     bottom: 0;
@@ -147,7 +156,7 @@ nav{
     color: var(--text-highlight-color);
 }
 
-nav a,nav i{
+nav a, nav i{
     color: var(--text-light-color);
     text-decoration: none;
 }
@@ -170,6 +179,7 @@ nav a,nav i{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    align-items: center;
 }
 
 .project-info{
@@ -178,8 +188,8 @@ nav a,nav i{
 }
 .project-image{
     padding: 0 !important;
-    width: 90% !important;
-    border-radius: 15px;
+    width: 100%;
+    border-radius: 10px;
 }
 
 .project-title{
@@ -194,9 +204,17 @@ nav a,nav i{
     font-weight: 555;
 }
 
-.project-technologies{
+.project-misc-text{
     font-size: 15px;
     font-weight: 400;
+}
+
+#project-info .project-misc-text{
+    margin-top: 16px;
+}
+
+.project a{
+    text-decoration: none;
 }
 
 .play-button{
@@ -228,14 +246,6 @@ nav a,nav i{
 
 .links {
     display: grid;
-}
-
-.links a{
-    color: var(--primary-light-color);
-}
-
-.links a:hover{
-    color:var(--primary-color);
 }
 
 /* Contact */
@@ -299,6 +309,10 @@ footer p{
     width: 100%;
 }
 
+.videos .video:not(:first-child) {
+    margin-top: 16px;
+}
+
 /* For desktop */
 @media only screen and (min-width: 650px) {
     .col-wide-1 {width: 8.33%;}
@@ -332,7 +346,7 @@ footer p{
         height: 100%;
     }
 
-    .name_wrapper{
+    .header_content_wrapper{
         height: 100%;
         display: flex;
         align-items: center;

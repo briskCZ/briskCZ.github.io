@@ -3,11 +3,13 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <link rel="stylesheet" href="src/style.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
         <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-        <title>SkiResortTycoon WebGL player</title>
+        
+        <title>Marek Nesvadba - SkiResortTycoon</title>
 
         <link rel="stylesheet" href="skiresort/TemplateData/style.css">
         <script src="skiresort/TemplateData/UnityProgress.js"></script>
@@ -17,18 +19,77 @@
         </script>
     </head>
     <body>
-        <div class="webgl-content">
-            <div id="unityContainer" style="width: 960px; height: 600px"></div>
-            <div class="footer">
-                <div class="webgl-logo"></div>
-                <div class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></div>
-                <div class="title">SkiResortTycoon</div>
+        <nav id="navbar">
+            <div class="menu-top menu-button"><i onclick="toggleMenu()" class="fa fa-bars hamburger"></i><a href="index.html#home">Marek Nesvadba</a></div>
+            <div id="menu-hide" class="menu-right-buttons">
+                <div class="menu-top menu-button"><a href="index.html#projects">Portfolio</a></div>
+                <div class="menu-top menu-button"><a href="https://drive.google.com/file/d/1fN3_JRWeU_E2YCWObYHlHIpaWnl_DOfu/view?usp=sharing" target="_blank">Resumé</a></div>
             </div>
-        </div>
+        </nav>
 
-        <div class="links">
-            <a href="index.html">Back to the main site!</a>
-        </div>
+        <header id="home" class="dark-bg row">
+            <div class="content">
+
+                <div class="project header_content_wrapper">
+                    <a class="col-wide-12"><img class="project-image" src="img/skiresort3.png" alt="Project Image"></a>
+                    <div class="col-wide-10 project-info">
+                        <p class="project-misc-text">Unity</p>
+                        <p class="project-title">SkiResortTycoon</p>
+                        <p class="project-desc-short">Game prototype made in a few weeks as an assignment in a Game design course at Masaryk University. Build and manage a ski resort in a graphical style of interactive winter maps.</p>
+                    </div>
+                </div>
+
+                <div class="header-arrow-wrapper">
+                    <a href="#project-info"><i class="fas fa-chevron-down header-arrow"></i></a>
+                </div>
+            </div>
+        </header>
+
+        <section id="project-info" class="dark-bg">
+            <div class="content">
+                <div class="col-wide-12">
+                    <h2>SkiResortTycoon - ski resort management game</h2>
+                    <p class="project-misc-text"><span class="highlight-weight">Used Technologies: </span>Unity, Gimp</p>
+                    <p class="project-misc-text"><span class="highlight-weight">My responsibilites: </span>Design, UI, building of ski lifts, slopes and buildings</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="about-project" class="light-bg">
+            <div class="content">
+                <h2>About</h2>
+                <div class="col-wide-6">
+                    <h3>Context</h3>
+                    <p>SkiResortTycoon was created as a university assignment by me and Zdeněk Doležal. The goal was to design and make a simple game to learn about game design. We made the prototype in a few weeks during the exam period and the final result is playable below. 
+                    </p>
+                </div>
+                <div class="col-wide-6">
+                    <h3>The Idea</h3>
+                    <p>The idea of making a tycoon game about ski resorts arose because we are fans of both. 
+                        We wanted the game to be visually similar to the interactive maps of ski resorts where players would be presented with an untouched mountain and would have to build ski lifts, slopes, infrastructure and buildings to transform it into a prospering ski resort.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="about-project" class="light-bg">
+            <div class="content">
+                <h2>The Result</h2>
+                
+                <div>
+                    <div id="unityContainer" style="width: 960px; height: 600px"></div>
+                    <div class="footer">
+                        <div class="webgl-logo"></div>
+                        <div class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></div>
+                        <div class="title">SkiResortTycoon</div>
+                    </div>
+                </div>
+
+            </div>
+        </section> 
+        <footer>
+            <p>© Marek Nesvadba 2024</p>
+        </footer>
     </body>
 </html> 
                     
